@@ -1,4 +1,4 @@
-//Code by IsolatedThinker ;)
+// Greetings User!! Code by IsolatedThinker ;)
 
 
 import java.util.Scanner;

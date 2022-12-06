@@ -1,25 +1,25 @@
-import java.io.IOException;
+//Code by IsolatedThinker ;)
 import java.util.Scanner;
 public class Calculator {
-    public static void main(String[]args) throws IOException, InterruptedException {
+    public static void main(String[]args) {
        Scanner scan = new Scanner(System.in);
 
-       System.out.println("Qual seu nome?: ");
-       String nome = scan.next();
+       System.out.println("What is your name?: ");
+       String name = scan.next();
 
        try {
-           Double.parseDouble(nome);
-           System.out.println("Heyy...sem números, insira seu nome na próxima...saindo... ");
+           Double.parseDouble(name);
+           System.out.println("Heyy...no numbers, enter with your name next time...exiting... ");
            System.exit(0);
        }catch(NumberFormatException e) {
-           System.out.println("Seja bem vindo " + nome);
+           System.out.println("Welcome " + name);
        }
 
        while (true){
            String operation, answer;
            double num1, num2, calculation;
 
-           System.out.println("--> What we will gonna do now " + nome + " (multiplication, division, sum or substraction)?");
+           System.out.println("--> What we will gonna do now " + name + " (multiplication, division, sum or substraction)?");
            operation = scan.next();
 
            if(operation.equals("multiplication")){
@@ -102,12 +102,6 @@ public class Calculator {
                answer = scan.next();
 
                          if(answer.equals("y")){
-                             if (System.getProperty("os.name").contains("Windows")) {
-                                 new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
-                             }else{
-                                 Runtime.getRuntime().exec("clear");
-
-                         }
                              continue;
                          }else if(answer.equals("n")){
                              System.exit(0);

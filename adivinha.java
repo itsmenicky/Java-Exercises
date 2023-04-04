@@ -29,8 +29,6 @@ public class adivinha{
       Runtime.getRuntime().exec("clear");
   }
 
-  //aquela interfacezinha de console monstra
-
   System.out.print(red + "\n |*" + "****************************************" + red + "*| " + reset);
   System.out.print(red + "\n |* " + "                                      " + red + " *| " + reset);
   System.out.print(red + "\n |* " + reset);
